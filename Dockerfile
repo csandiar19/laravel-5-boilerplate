@@ -6,5 +6,5 @@ RUN yum-config-manager --enable remi-php72 && yum install unzip php php-mbstring
 ADD bahan.zip /var/phpunit/
 WORKDIR /var/phpunit
 RUN unzip -o bahan.zip
-ENTRYPOINT php artisan server --port=8080
+ENTRYPOINT php artisan serv --port=8080
 
